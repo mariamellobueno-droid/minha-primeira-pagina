@@ -32,12 +32,55 @@
     <p> Aqui vou compartilhar uma porção diaria da palavra e do Amor de Deus sobre a sua vida</p>
 </header>
 <main>
-    <img src="#aesthetic.jpeg" alt="biblia grifada com um tablet do lado tocando louvor em uma cama">
+    <img src="#aesthetalt="biblia aberta> 
     <div>
     <h2> meu primeiro post </h2>
     <p> por: Maria Mello </p>
     <p>Bem-vindo ao Videira Renovo — o seu ponto de encontro diário com o Evangelho da Graça.Assim como os ramos precisam estar conectados à videira para dar frutos, o nosso coração necessita do Sopro do Espírito para experimentar um recomeço real. O Videira Renovo nasceu para ser essa conexão diária com o amor de Jesus. Aqui, compartilhamos devocionais práticos, versículos bíblicos destacados e palavras de esperança focadas no favor imerecido de Deus.Esqueça o peso e o cansaço espiritual da rotina. Tire alguns minutos do seu dia para se alimentar da Palavra, transformar a sua mente e descansar na certeza de que a graça de Cristo é tudo o que você precisa. Conecte-se à Verdadeira Videira e viva o Renovo de Deus! </p>
- <div>
+  <div>
+                <h2>Meu primeiro post</h2>
+                <p class="artigo-autor">Por: Marcelo Paludetto</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+        <article>
+            <img src="imagem-blog.png"
+                alt="Logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+            <div>
+                <h2>Meu segundo post</h2>
+                <p class="artigo-autor">Por: Marcelo Paludetto</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+                    tecnologia.</p>
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+    </main>
+</body>
+<script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(function (botao) {
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            if (curtiu === false){
+                texto.textContent++;
+                curtiu = true;
+            } else{
+                texto.textContent--;
+                curtiu = false;
+            }
+        }
+    })
+
+
+</script
 </main>
 
 
